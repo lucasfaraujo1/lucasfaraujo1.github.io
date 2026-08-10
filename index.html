@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Araújo - Simulações Computacionais</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header (Navbar) -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="logo/logo-sem-fundo-cabecalho.png" alt="Lucas Araújo Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="#inicio">Início</a>
+                <a href="servicos.html" target="_blank">Serviços</a>
+                <a href="sobre.html" target="_blank">Sobre</a>
+                <a href="contato.html" target="_blank">Contato</a>
+            </nav>
+            <div class="nav-action">
+                <a href="#contato" class="btn btn-white">ORÇAMENTO</a>
+            </div>
+            <!-- Botão Mobile Menu -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Mobile Oculto -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#inicio" class="mobile-link">Início</a>
+        <a href="servicos.html" target="_blank" class="mobile-link">Serviços</a>
+        <a href="sobre.html" target="_blank" class="mobile-link">Sobre</a>
+        <a href="contato.html" target="_blank" class="mobile-link">Contato</a>
+        <a href="#contato" class="btn btn-primary mobile-btn">ORÇAMENTO</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <!-- Vídeo de Fundo -->
+        <video autoplay loop muted playsinline class="bg-video">
+            <source src="video-site.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+        <!-- Fundo escuro transparente para não ofuscar o texto -->
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>SOLUÇÕES POR<br>SIMULAÇÃO EM<br>MONTE CARLO</h1>
+                <div class="hero-divider"></div>
+                <p>Consultoria técnica independente para verificação de blindagens e dosimetria em proteção radiológica através de códigos computacionais Monte Carlo.</p>
+                <a href="#contato" class="btn btn-white btn-large">Solicitar Consultoria</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="nossos-servicos">
+        <div class="container">
+            <h2 class="section-title text-center">MEUS SERVIÇOS</h2>
+            <p class="section-subtitle text-center">Uma ampla gama de serviços especializados para garantir precisão e segurança. Confira:</p>
+            
+            <div class="services-list-container">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div class="service-name">Estudos de blindagem para radioproteção</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    </div>
+                    <div class="service-name">Simulações em protocolos de radioterapia</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    </div>
+                    <div class="service-name">Análise de dados</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    </div>
+                    <div class="service-name">Dosimetria de feixes externos</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                    </div>
+                    <div class="service-name">Dosimetria de braquiterapia</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalhes Section (Por que Monte Carlo) -->
+    <section id="sobre" class="detalhes">
+        <div class="container detalhes-container">
+            <div class="detalhes-content">
+                <span class="small-subtitle">POR QUE MONTE CARLO?</span>
+                <h2>Precisão<br>Estocástica<br>Aplicada</h2>
+                <hr class="short-divider">
+                <p>Diferente de cálculos manuais simplificados, o algoritmo Monte Carlo simula milhões de trajetórias individuais de partículas. Esse rigor estatístico é a ferramenta definitiva para o transporte de radiação em meios heterogêneos, oferecendo uma verificação de segurança secundária robusta e auditável para projetos hospitalares e plantas industriais.</p>
+            </div>
+            <div class="detalhes-images">
+                <img src="imgs-site/Imagem1.png" alt="Interface Software Monte Carlo" class="main-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Fluxo de Trabalho Section -->
+    <section class="fluxo-trabalho">
+        <div class="container">
+            <h2>Fluxo de Trabalho</h2>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="step-num">01</span>
+                        <span class="step-title">Escopo da Consultoria</span>
+                        <span class="step-action">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="accordion-icon">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Definição conjunta dos objetivos, geometrias envolvidas, fontes de radiação e limites de dose aceitáveis segundo as normas vigentes (CNEN, IAEA).</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="step-num">02</span>
+                        <span class="step-title">Entrada de Dados</span>
+                        <span class="step-action">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="accordion-icon">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Coleta de plantas baixas, especificações de materiais (densidade, composição) e parâmetros técnicos dos emissores de radiação para transição ao ambiente virtual.</p>
+                        <img src="imgs-site/planta-entrada-dados.png" alt="Exemplo de Planta de Entrada de Dados" class="accordion-img">
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="step-num">03</span>
+                        <span class="step-title">Modelagem Computacional</span>
+                        <span class="step-action">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="accordion-icon">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Construção rigorosa da geometria 3D, definição de materiais (cross-sections) e configuração da física de interação estocástica no código Monte Carlo.</p>
+                        <img src="imgs-site/modelagem-computacional.png" alt="Exemplo de Modelagem Computacional" class="accordion-img">
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="step-num">04</span>
+                        <span class="step-title">Execução do Código</span>
+                        <span class="step-action">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="accordion-icon">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Simulação em clusters de alto processamento, garantindo o rastreamento adequado de milhões de histórias e convergência estatística.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="step-num">05</span>
+                        <span class="step-title">Análise Estatística</span>
+                        <span class="step-action">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="accordion-icon">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Processamento de resultados, análise de variância e mapeamento fluência-dose, certificando a consistência e precisão dos dados extraídos.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="step-num">06</span>
+                        <span class="step-title">Relatório Técnico</span>
+                        <span class="step-action">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="accordion-icon">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Entrega de documentação completa e validada contendo mapas de dose, resultados tabulados e parecer técnico sobre a adequação do projeto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container contato-container">
+            <div class="contato-info">
+                <h2>SOLICITE<br>PROPOSTA<br>TÉCNICA</h2>
+                
+                <div class="contato-block">
+                    <h4>FALE COMIGO</h4>
+                    <p>lucasfaraujo1@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="contato-form">
+                <form action="https://formsubmit.co/lucasfaraujo1@gmail.com" method="POST" id="form-contato">
+                    <!-- Configurações ocultas do FormSubmit -->
+                    <input type="hidden" name="_subject" value="Novo contato pelo site!">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto *</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="logo/logo-sem-fundo.png" alt="Lucas Araújo Logo">
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2026 Lucas Araújo | Consultoria Técnica em Proteção Radiológica por Monte Carlo.<br>
+                Projetos de Blindagem e Simulações de Transporte de Partículas por Meio do Método de Monte Carlo.<br>
+                Responsável: Lucas Araújo, Físico Médico.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/lucas-araujo123/" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/linkedin.svg" alt="LinkedIn" width="32"></a>
+                <a href="http://lattes.cnpq.br/6474026741636325" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/logo-lattes-azul.svg" alt="Lattes" width="32"></a>
+                <a href="https://www.researchgate.net/profile/Lucas-Araujo-42" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/researchgate.svg" alt="ResearchGate" width="32"></a>
+                <a href="https://github.com/lucasfaraujo1" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/github.svg" alt="GitHub" width="32"></a>
+                <a href="https://www.instagram.com/lucasfabriciofm" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/instagram.svg" alt="Instagram" width="32"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="script.js"></script>
+</body>
+</html>

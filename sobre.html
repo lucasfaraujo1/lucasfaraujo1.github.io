@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Araújo - Simulações Computacionais</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header (Navbar) -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="logo/logo-sem-fundo-cabecalho.png" alt="Lucas Araújo Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html#inicio">Início</a>
+                <a href="servicos.html" target="_blank">Serviços</a>
+                <a href="#sobre">Sobre</a>
+                <a href="contato.html" target="_blank">Contato</a>
+            </nav>
+            <div class="nav-action">
+                <a href="#contato" class="btn btn-white">ORÇAMENTO</a>
+            </div>
+            <!-- Botão Mobile Menu -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Mobile Oculto -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html#inicio" class="mobile-link">Início</a>
+        <a href="servicos.html" target="_blank" class="mobile-link">Serviços</a>
+        <a href="#sobre" class="mobile-link">Sobre</a>
+        <a href="contato.html" target="_blank" class="mobile-link">Contato</a>
+        <a href="#contato" class="btn btn-primary mobile-btn">ORÇAMENTO</a>
+    </div>
+
+
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <video autoplay loop muted playsinline class="bg-video">
+            <source src="video-site.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1>SOBRE</h1>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre-mim-section">
+        <div class="container">
+            <div class="sobre-container">
+                <div class="sobre-texto">
+                    <h2>Simulação computacional aplicada à radiação</h2>
+                    <p>Desenvolvo estudos de <strong>simulação computacional, dosimetria e transporte de radiação</strong> para aplicações em física médica, radioterapia, braquiterapia e proteção radiológica.</p>
+                    <p>Meu trabalho é baseado em métodos computacionais e simulações Monte Carlo, buscando transformar problemas complexos de transporte de radiação em <strong>análises técnicas, quantitativas e fundamentadas</strong>.</p>
+                    
+                    <h2>Formação e experiência</h2>
+                    <p>Sou <strong>Físico Médico</strong>, graduado pela Universidade Federal de Sergipe (UFS) em 2018, com <strong>Mestrado (2020) e Doutorado (2026) em Ciências e Técnicas Nucleares pela Universidade Federal de Minas Gerais (UFMG)</strong>.</p>
+                    <p>Minha trajetória acadêmica é concentrada na aplicação de métodos computacionais ao <strong>transporte de partículas e radiação</strong>, com experiência em dosimetria, microdosimetria, radiobiologia e simulações Monte Carlo.</p>
+                    
+                    <h2>Expertise</h2>
+                    <p>Atuo com diferentes códigos e ferramentas de simulação, incluindo <strong>MCNP, PENELOPE, TOPAS e PHITS</strong>, além de desenvolvimento e análise computacional utilizando <strong>Python</strong>.</p>
+                    <p>Essa experiência permite abordar diferentes problemas envolvendo <strong>blindagem, dosimetria, caracterização de feixes e transporte de radiação</strong>, adaptando a modelagem às necessidades de cada estudo.</p>
+
+                    <h2>Pesquisa aplicada</h2>
+                    <p>Minha formação inclui trabalhos de pesquisa diretamente relacionados à simulação e dosimetria.</p>
+                    <p><strong>Mestrado</strong><br>
+                    <em>Metodologia para Modelar Computacionalmente um Sistema Padrão para Dosimetria Beta</em> — desenvolvimento de uma metodologia computacional para a modelagem do sistema BSS2 para dosimetria beta.</p>
+                    <p><strong>Doutorado</strong><br>
+                    <em>Estudo In Silico sobre o Uso de Nanopartículas de Ouro em Protocolo de Braquiterapia</em> — estudos computacionais envolvendo transporte de radiação, microdosimetria e radiobiologia, com aplicação na estimativa de curvas de sobrevivência celular.</p>
+
+                    <h2>Conhecimento técnico aplicado a problemas reais</h2>
+                    <p>O objetivo é oferecer <strong>simulações confiáveis, tecnicamente fundamentadas e adequadas a cada aplicação</strong>, fornecendo resultados que possam apoiar projetos, análises e tomadas de decisão relacionadas à radiação.</p>
+                </div>
+                <div class="sobre-imagem">
+                    <img src="imgs-site/sobre-mim.jpeg" alt="Lucas Araújo - Físico Médico">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container contato-container">
+            <div class="contato-info">
+                <h2>SOLICITE<br>PROPOSTA<br>TÉCNICA</h2>
+                
+                <div class="contato-block">
+                    <h4>FALE COMIGO</h4>
+                    <p>lucasfaraujo1@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="contato-form">
+                <form action="https://formsubmit.co/lucasfaraujo1@gmail.com" method="POST" id="form-contato">
+                    <!-- Configurações ocultas do FormSubmit -->
+                    <input type="hidden" name="_subject" value="Novo contato pelo site!">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto *</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="logo/logo-sem-fundo.png" alt="Lucas Araújo Logo">
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2026 Lucas Araújo | Consultoria Técnica em Proteção Radiológica por Monte Carlo.<br>
+                Projetos de Blindagem e Simulações de Transporte de Partículas por Meio do Método de Monte Carlo.<br>
+                Responsável: Lucas Araújo, Físico Médico.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/lucas-araujo123/" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/linkedin.svg" alt="LinkedIn" width="32"></a>
+                <a href="http://lattes.cnpq.br/6474026741636325" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/logo-lattes-azul.svg" alt="Lattes" width="32"></a>
+                <a href="https://www.researchgate.net/profile/Lucas-Araujo-42" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/researchgate.svg" alt="ResearchGate" width="32"></a>
+                <a href="https://github.com/lucasfaraujo1" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/github.svg" alt="GitHub" width="32"></a>
+                <a href="https://www.instagram.com/lucasfabriciofm" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/instagram.svg" alt="Instagram" width="32"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="script.js"></script>
+</body>
+</html>

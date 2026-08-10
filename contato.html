@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Araújo - Simulações Computacionais</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header (Navbar) -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="logo/logo-sem-fundo-cabecalho.png" alt="Lucas Araújo Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html#inicio">Início</a>
+                <a href="servicos.html" target="_blank">Serviços</a>
+                <a href="sobre.html" target="_blank">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <!-- Botão Mobile Menu -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Mobile Oculto -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html#inicio" class="mobile-link">Início</a>
+        <a href="servicos.html" target="_blank" class="mobile-link">Serviços</a>
+        <a href="sobre.html" target="_blank" class="mobile-link">Sobre</a>
+        <a href="#contato" class="mobile-link">Contato</a>
+    </div>
+
+
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <video autoplay loop muted playsinline class="bg-video">
+            <source src="video-site.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1>FALE COMIGO</h1>
+        </div>
+    </section>
+
+    <!-- Contato Dedicado Section -->
+    <section id="contato" class="contato-dedicado">
+        <div class="container text-center">
+            <h3 class="contato-desc">
+                Necessita de serviços de simulação ou consultoria em radioproteção?<br>
+                Entre em contato para solicitar um orçamento ou tirar suas dúvidas.
+            </h3>
+            
+            <h4 class="contato-chamada">Basta me chamar via e-mail</h4>
+            
+            <div class="contato-email-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="email-icon">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <a href="mailto:lucasfaraujo1@gmail.com">lucasfaraujo1@gmail.com</a>
+            </div>
+
+            <div class="contato-redes">
+                <h5>REDES SOCIAIS</h5>
+                <div class="redes-icons">
+                    <a href="https://www.linkedin.com/in/lucas-araujo123/" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="http://lattes.cnpq.br/6474026741636325" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/logo-lattes-azul.svg" alt="Lattes"></a>
+                    <a href="https://www.researchgate.net/profile/Lucas-Araujo-42" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/researchgate.svg" alt="ResearchGate"></a>
+                    <a href="https://github.com/lucasfaraujo1" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/github.svg" alt="GitHub"></a>
+                    <a href="https://www.instagram.com/lucasfabriciofm" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/instagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container contato-container">
+            <div class="contato-info">
+                <h2>SOLICITE<br>PROPOSTA<br>TÉCNICA</h2>
+                
+                <div class="contato-block">
+                    <h4>FALE CONOSCO</h4>
+                    <p>lucasfaraujo1@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="contato-form">
+                <form action="#" method="POST" id="form-contato">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto *</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="logo/logo-sem-fundo.png" alt="Lucas Araújo Logo">
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2026 Lucas Araújo | Consultoria Técnica em Proteção Radiológica por Monte Carlo.<br>
+                Projetos de Blindagem e Simulações de Transporte de Partículas por Meio do Método de Monte Carlo.<br>
+                Responsável: Lucas Araújo, Físico Médico.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/lucas-araujo123/" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/linkedin.svg" alt="LinkedIn" width="32"></a>
+                <a href="http://lattes.cnpq.br/6474026741636325" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/logo-lattes-azul.svg" alt="Lattes" width="32"></a>
+                <a href="https://www.researchgate.net/profile/Lucas-Araujo-42" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/researchgate.svg" alt="ResearchGate" width="32"></a>
+                <a href="https://github.com/lucasfaraujo1" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/github.svg" alt="GitHub" width="32"></a>
+                <a href="https://www.instagram.com/lucasfabriciofm" target="_blank" rel="noopener noreferrer"><img src="redes-sociais-links/instagram.svg" alt="Instagram" width="32"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="script.js"></script>
+</body>
+</html>
